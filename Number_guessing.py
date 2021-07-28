@@ -1,5 +1,5 @@
 from random import randint
-
+#  User guess the number
 def number_guessing(user_number, rand_number):
     flag = False
     while flag == False:
@@ -11,6 +11,7 @@ def number_guessing(user_number, rand_number):
         elif user_number > rand_number:
             user_number = int(input("\n \t\t\t\tYour number is higher than my number\n\t\t\t\t Please choose another number: "))
 
+# Robot will guess the number
 def robot_guessing(rand_number):
     flag = False
     count = 0
@@ -31,4 +32,5 @@ def Run():
 
     number_guessing(user_number, rand_number)
     robot_guessing(rand_number)
+    
 Run()
